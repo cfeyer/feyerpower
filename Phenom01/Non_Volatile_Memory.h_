@@ -1,0 +1,27 @@
+/*
+ * Non_Volatile_Memory.h
+ *
+ * Created: 6/22/2013 8:11:07 AM
+ *  Author: Chris
+ */ 
+
+
+#ifndef NON_VOLATILE_MEMORY_H_
+#define NON_VOLATILE_MEMORY_H_
+
+class User_Configuration;
+
+class Non_Volatile_Memory
+{
+   public:
+
+      static void read( User_Configuration & user_configuration );
+      static void write( const User_Configuration & user_configuration );
+
+   private:
+
+      Non_Volatile_Memory(); // disallow
+};
+
+
+#endif /* NON_VOLATILE_MEMORY_H_ */

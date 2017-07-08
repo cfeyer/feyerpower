@@ -1,0 +1,29 @@
+/*
+ * Non_Volatile_Memory.cpp
+ *
+ * Created: 6/22/2013 8:11:47 AM
+ *  Author: Chris
+ */ 
+
+
+#include "Non_Volatile_Memory.h"
+
+#include "User_Configuration.h"
+
+#include <avr/eeprom.h>
+
+#define CONFIG_ADDR_IN_EEPROM 0
+
+void Non_Volatile_Memory::read( User_Configuration & user_configuration )
+{
+   eeprom_read_block( &user_configuration,
+                      CONFIG_ADDR_IN_EEPROM,
+                      sizeof(user_configuration) );
+}
+
+void Non_Volatile_Memory::write( const User_Configuration & user_configuration )
+{
+   eeprom_write_block( &user_configuration,
+                       CONFIG_ADDR_IN_EEPROM,
+                       sizeof(user_configuration) );
+}

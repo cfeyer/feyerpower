@@ -1,0 +1,23 @@
+/*
+ * Periodic_Update_Interface.h
+ *
+ * Created: 6/22/2013 7:41:23 AM
+ *  Author: Chris
+ */ 
+
+
+#ifndef PERIODIC_UPDATE_INTERFACE_H_
+#define PERIODIC_UPDATE_INTERFACE_H_
+
+
+class Periodic_Update_Interface
+{
+   public:
+
+      virtual ~Periodic_Update_Interface(void) {}
+
+      
+};
+
+
+#endif /* PERIODIC_UPDATE_INTERFACE_H_ */

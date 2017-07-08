@@ -1,0 +1,31 @@
+/*
+ * TODO.txt
+ *
+ * Created: 7/3/2013 11:47:42 PM
+ *  Author: Chris
+ */ 
+
+
+* Figure out pin I/O modes (driven output, pull-up/pull-down, high impedance)
+
+* Watchdog timer
+* Battery class ADC - determine threshold and write code
+* Figure out behavior of Tippmann's turbo mode
+* BUG: Response trigger w/ 3-shot safety takes too long to time out
+* Startup lights - flash orange
+
+
+DONE * Configuration menus
+DONE * Configuration menu write to EEPROM
+DONE * class Menu - use array of records for menu structure/behavior/values
+DONE * Lights in Menu always show that first parameter is selected
+DONE * Write Configuration Main
+DONE * Revert to factory settings
+DONE * Detect shooting vs configuration modes
+DONE * Wrap immediate enhanced mode option into three shot safety class
+DONE * Create mux controller object
+DONE * Stop inheriting from Periodic_Update_Interface to reduce data memory usage
+DONE * Shooting Main - load settings from EEPROM to correct classes
+DONE * BUG: Full-auto mode enables prematurely with three-shot safety (probably applies to turbo as well);
+   begins shooting on hold-down of second pull
+DONE * Shooting Lights - flash orange upon trigger pull (2ms green, 1ms red, repeat) - decided to flash on solenoid instead of trigger

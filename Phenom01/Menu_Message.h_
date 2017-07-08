@@ -1,0 +1,20 @@
+/*
+ * Menu_Message.h
+ *
+ * Created: 7/4/2013 4:00:21 PM
+ *  Author: Chris
+ */ 
+
+
+#ifndef MENU_MESSAGE_H_
+#define MENU_MESSAGE_H_
+
+#include "Menu_State_Enum.h"
+
+class Menu_Message
+{
+   public:
+};
+
+
+#endif /* MENU_MESSAGE_H_ */

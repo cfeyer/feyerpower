@@ -1,0 +1,403 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>6.1</ProjectVersion>
+    <ToolchainName>com.Atmel.AVRGCC8.CPP</ToolchainName>
+    <ProjectGuid>{da19ffac-40a2-4897-bb5f-f9841ceaf4a9}</ProjectGuid>
+    <avrdevice>ATtiny44A</avrdevice>
+    <avrdeviceseries>none</avrdeviceseries>
+    <OutputType>Executable</OutputType>
+    <Language>CPP</Language>
+    <OutputFileName>$(MSBuildProjectName)</OutputFileName>
+    <OutputFileExtension>.elf</OutputFileExtension>
+    <OutputDirectory>$(MSBuildProjectDirectory)\$(Configuration)</OutputDirectory>
+    <AssemblyName>Phenom01</AssemblyName>
+    <Name>Phenom01</Name>
+    <RootNamespace>Phenom01</RootNamespace>
+    <ToolchainFlavour>Native</ToolchainFlavour>
+    <KeepTimersRunning>true</KeepTimersRunning>
+    <OverrideVtor>false</OverrideVtor>
+    <OverrideVtorValue>exception_table</OverrideVtorValue>
+    <eraseonlaunchrule>1</eraseonlaunchrule>
+    <ProgFlashFromRam>true</ProgFlashFromRam>
+    <RamSnippetAddress>0x20000000</RamSnippetAddress>
+    <CacheFlash>true</CacheFlash>
+    <UncachedRange />
+    <BootSegment>2</BootSegment>
+    <AsfFrameworkConfig>
+      <framework-data xmlns="">
+        <options />
+        <configurations />
+        <files />
+        <documentation help="" />
+        <offline-documentation help="" />
+        <dependencies>
+          <content-extension eid="atmel.asf" uuidref="Atmel.ASF" version="3.8.1" />
+        </dependencies>
+      </framework-data>
+    </AsfFrameworkConfig>
+    <avrtoolinterface>
+    </avrtoolinterface>
+    <avrtool>com.atmel.avrdbg.tool.simulator</avrtool>
+    <com_atmel_avrdbg_tool_simulator>
+      <ToolType>com.atmel.avrdbg.tool.simulator</ToolType>
+      <ToolName>Simulator</ToolName>
+      <ToolNumber>
+      </ToolNumber>
+      <StimuliFile>
+      </StimuliFile>
+      <Channel>
+        <host>127.0.0.1</host>
+        <port>49733</port>
+        <ssl>False</ssl>
+      </Channel>
+      <ToolOptions>
+        <InterfaceProperties>
+          <JtagEnableExtResetOnStartSession>false</JtagEnableExtResetOnStartSession>
+        </InterfaceProperties>
+        <InterfaceName>
+        </InterfaceName>
+      </ToolOptions>
+    </com_atmel_avrdbg_tool_simulator>
+    <com_atmel_avrdbg_tool_avrdragon>
+      <ToolType>com.atmel.avrdbg.tool.avrdragon</ToolType>
+      <ToolName>AVR Dragon</ToolName>
+      <ToolNumber>00A200041980</ToolNumber>
+      <StimuliFile>
+      </StimuliFile>
+      <Channel>
+        <host>127.0.0.1</host>
+        <port>49236</port>
+        <ssl>False</ssl>
+      </Channel>
+      <ToolOptions>
+        <InterfaceName>ISP</InterfaceName>
+        <InterfaceProperties>
+          <JtagDbgClock>200000</JtagDbgClock>
+          <SwdClock>249000</SwdClock>
+          <JtagProgClock>200000</JtagProgClock>
+          <IspClock>125000</IspClock>
+          <JtagInChain>false</JtagInChain>
+          <JtagEnableExtResetOnStartSession>false</JtagEnableExtResetOnStartSession>
+          <JtagDevicesBefore>0</JtagDevicesBefore>
+          <JtagDevicesAfter>0</JtagDevicesAfter>
+          <JtagInstrBitsBefore>0</JtagInstrBitsBefore>
+          <JtagInstrBitsAfter>0</JtagInstrBitsAfter>
+        </InterfaceProperties>
+      </ToolOptions>
+    </com_atmel_avrdbg_tool_avrdragon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <ToolchainSettings>
+      <AvrGccCpp>
+        <avrgcc.common.outputfiles.hex>True</avrgcc.common.outputfiles.hex>
+        <avrgcc.common.outputfiles.lss>True</avrgcc.common.outputfiles.lss>
+        <avrgcc.common.outputfiles.eep>True</avrgcc.common.outputfiles.eep>
+        <avrgcc.common.outputfiles.srec>True</avrgcc.common.outputfiles.srec>
+        <avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>True</avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>
+        <avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>
+        <avrgcc.compiler.symbols.DefSymbols>
+          <ListValues>
+            <Value>NDEBUG</Value>
+          </ListValues>
+        </avrgcc.compiler.symbols.DefSymbols>
+        <avrgcc.compiler.optimization.level>Optimize for size (-Os)</avrgcc.compiler.optimization.level>
+        <avrgcc.compiler.optimization.PackStructureMembers>True</avrgcc.compiler.optimization.PackStructureMembers>
+        <avrgcc.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcc.compiler.optimization.AllocateBytesNeededForEnum>
+        <avrgcc.compiler.warnings.AllWarnings>True</avrgcc.compiler.warnings.AllWarnings>
+        <avrgcccpp.compiler.general.ChangeDefaultCharTypeUnsigned>True</avrgcccpp.compiler.general.ChangeDefaultCharTypeUnsigned>
+        <avrgcccpp.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcccpp.compiler.general.ChangeDefaultBitFieldUnsigned>
+        <avrgcccpp.compiler.symbols.DefSymbols>
+          <ListValues>
+            <Value>NDEBUG</Value>
+          </ListValues>
+        </avrgcccpp.compiler.symbols.DefSymbols>
+        <avrgcccpp.compiler.optimization.level>Optimize for size (-Os)</avrgcccpp.compiler.optimization.level>
+        <avrgcccpp.compiler.optimization.PackStructureMembers>True</avrgcccpp.compiler.optimization.PackStructureMembers>
+        <avrgcccpp.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcccpp.compiler.optimization.AllocateBytesNeededForEnum>
+        <avrgcccpp.compiler.warnings.AllWarnings>True</avrgcccpp.compiler.warnings.AllWarnings>
+        <avrgcccpp.linker.libraries.Libraries>
+          <ListValues>
+            <Value>libm</Value>
+          </ListValues>
+        </avrgcccpp.linker.libraries.Libraries>
+        <avrgcccpp.linker.memorysettings.Comment>&lt;segmentname&gt;=&lt;address&gt;, for example  .boot=0xff</avrgcccpp.linker.memorysettings.Comment>
+      </AvrGccCpp>
+    </ToolchainSettings>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <ToolchainSettings>
+      <AvrGccCpp>
+        <avrgcc.common.outputfiles.hex>True</avrgcc.common.outputfiles.hex>
+        <avrgcc.common.outputfiles.lss>True</avrgcc.common.outputfiles.lss>
+        <avrgcc.common.outputfiles.eep>True</avrgcc.common.outputfiles.eep>
+        <avrgcc.common.outputfiles.srec>True</avrgcc.common.outputfiles.srec>
+        <avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>True</avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>
+        <avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>
+        <avrgcc.compiler.symbols.DefSymbols>
+          <ListValues>
+            <Value>DEBUG</Value>
+          </ListValues>
+        </avrgcc.compiler.symbols.DefSymbols>
+        <avrgcc.compiler.optimization.level>Optimize (-O1)</avrgcc.compiler.optimization.level>
+        <avrgcc.compiler.optimization.PackStructureMembers>True</avrgcc.compiler.optimization.PackStructureMembers>
+        <avrgcc.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcc.compiler.optimization.AllocateBytesNeededForEnum>
+        <avrgcc.compiler.optimization.DebugLevel>Default (-g2)</avrgcc.compiler.optimization.DebugLevel>
+        <avrgcc.compiler.warnings.AllWarnings>True</avrgcc.compiler.warnings.AllWarnings>
+        <avrgcccpp.compiler.general.ChangeDefaultCharTypeUnsigned>True</avrgcccpp.compiler.general.ChangeDefaultCharTypeUnsigned>
+        <avrgcccpp.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcccpp.compiler.general.ChangeDefaultBitFieldUnsigned>
+        <avrgcccpp.compiler.symbols.DefSymbols>
+          <ListValues>
+            <Value>DEBUG</Value>
+          </ListValues>
+        </avrgcccpp.compiler.symbols.DefSymbols>
+        <avrgcccpp.compiler.optimization.level>Optimize (-O1)</avrgcccpp.compiler.optimization.level>
+        <avrgcccpp.compiler.optimization.PackStructureMembers>True</avrgcccpp.compiler.optimization.PackStructureMembers>
+        <avrgcccpp.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcccpp.compiler.optimization.AllocateBytesNeededForEnum>
+        <avrgcccpp.compiler.optimization.DebugLevel>Default (-g2)</avrgcccpp.compiler.optimization.DebugLevel>
+        <avrgcccpp.compiler.warnings.AllWarnings>True</avrgcccpp.compiler.warnings.AllWarnings>
+        <avrgcccpp.linker.libraries.Libraries>
+          <ListValues>
+            <Value>libm</Value>
+          </ListValues>
+        </avrgcccpp.linker.libraries.Libraries>
+        <avrgcccpp.linker.memorysettings.Comment>&lt;segmentname&gt;=&lt;address&gt;, for example  .boot=0xff</avrgcccpp.linker.memorysettings.Comment>
+        <avrgcccpp.assembler.debugging.DebugLevel>Default (-Wa,-g)</avrgcccpp.assembler.debugging.DebugLevel>
+      </AvrGccCpp>
+    </ToolchainSettings>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Auto_Response_Firing_Mode.i">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Auto_Response_Firing_Mode.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Battery.i">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Battery.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Battery_Health_Enum.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Battery_Message.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Battery_Message.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Bit_Ops.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Debug_Pin.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Debug_Pin.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Enhanced_Firing_Mode_Guard_Policy_Enum.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Factory_Reset.i">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Factory_Reset.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Firing_Mode_Demux.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Firing_Mode_Demux.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Firing_Mode_Demux_Controller.i">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Firing_Mode_Demux_Controller.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Full_Auto_Firing_Mode.i">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Full_Auto_Firing_Mode.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Light_Message.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Light_Message.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Light_State_Enum.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Menu.i">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Menu.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Menu_Message.h_">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Menu_State_Enum.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Non_Volatile_Memory.cpp_">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Non_Volatile_Memory.h_">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Number_Flasher.i">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Number_Flasher.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Number_Flasher_Command_Message.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Number_Flasher_Command_Message.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Number_Flasher_Status_Message.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Number_Flasher_Status_Message.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Phenom_IO.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Pushbutton_Message.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Pushbutton_Message.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Pushbutton_Position_Enum.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Runtime_State_Enum.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Runtime_State_Manager.i">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Runtime_State_Manager.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Runtime_State_Message.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Runtime_State_Message.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Semi_Auto_Firing_Mode.i">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Semi_Auto_Firing_Mode.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Main.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="CPP_Dynamic_Memory.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="CPP_Virtual_Inheritance.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Firing_Mode_Interface.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Periodic_Update_Interface.h_">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Solenoid_Command_Enum.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Solenoid_Message.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Solenoid_Message.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Three_Shot_Burst_Firing_Mode.i">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Three_Shot_Burst_Firing_Mode.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Three_Shot_Safety_Mode.i">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Three_Shot_Safety_Mode.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Time_Frame_Manager.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Time_Frame_Manager.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Trigger_Position_Enum.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Trigger_Message.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Trigger_Message.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Turbo_Firing_Mode.i">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Turbo_Firing_Mode.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="User_Configuration.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="User_Configuration.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Firing_Modes_Enum.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Lights.i">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Lights.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Pushbutton.i">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Pushbutton.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Solenoid.i">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Solenoid.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Trigger.i">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Trigger.h">
+      <SubType>compile</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="TODO.txt">
+      <SubType>compile</SubType>
+    </None>
+  </ItemGroup>
+  <Import Project="$(AVRSTUDIO_EXE_PATH)\\Vs\\Compiler.targets" />
+</Project>

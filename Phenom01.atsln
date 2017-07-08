@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Atmel Studio Solution File, Format Version 11.00
+Project("{E66E83B9-2572-4076-B26E-6BE79FF3018A}") = "Phenom01", "Phenom01\Phenom01.cppproj", "{DA19FFAC-40A2-4897-BB5F-F9841CEAF4A9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AVR = Debug|AVR
+		Release|AVR = Release|AVR
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DA19FFAC-40A2-4897-BB5F-F9841CEAF4A9}.Debug|AVR.ActiveCfg = Debug|AVR
+		{DA19FFAC-40A2-4897-BB5F-F9841CEAF4A9}.Debug|AVR.Build.0 = Debug|AVR
+		{DA19FFAC-40A2-4897-BB5F-F9841CEAF4A9}.Release|AVR.ActiveCfg = Release|AVR
+		{DA19FFAC-40A2-4897-BB5F-F9841CEAF4A9}.Release|AVR.Build.0 = Release|AVR
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
