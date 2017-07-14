@@ -1,6 +1,8 @@
 # FeyerPower: Firmware for Tippmann X7 Phenom
 
-The goal of the FeyerPower Project is to develop firmware for the Tippmann X7 Phenom that matches
+The goal of the FeyerPower Project is to develop firmware for the
+[Tippmann X7 Phenom electro-pneumatic paintball gun](http://www.tippmann.com/p/x7-phenom?pp=24)
+that matches
 and surpasses the features of the factory firmware. This project started from a desire
 to disable the "three shot safety" associated with the enhanced firing modes of the
 factory firmware.
@@ -86,9 +88,40 @@ confusion later.
 
 ## Building
 
-You can use [Atmel Studio](http://www.atmel.com/tools/atmelstudio.aspx) software to build the source code
-of the FeyerPower Project into a firmware binary image that can be installed on your paintball gun.
+You can use [Atmel Studio](http://www.atmel.com/tools/atmelstudio.aspx) software to
+generate a firmware binary image file from the source code of the FeyerPower Project.
 
 ## Developing
 
-TODO
+### Board design
+
+An Atmel AVR ATtiny44 8-bit microcontroller is at the core of the design of the
+Phenom's circuit board.  It functions as the gun's brain.  It processes inputs
+from the following sensors and sends outputs to the following actuators.
+
+#### Sensors (inputs)
+* Trigger
+* Pushbutton
+
+#### Actuators (outputs)
+* Solenoid
+* Red LED
+* Green LED
+
+### Tips
+
+* You can purchase additional electronics assemblies from Tippmann as part number TA99600 "Hall Effect Electronics (Electro-pneumatic mode". We use two: one with the factory firmware to use as a reference, and one with FeyerPower firmware.
+
+* Consider building a "test bed" on a breadboard to make development and testing easier.
+An Atmel AVR ATtiny44 micrcontroller in a DIP package is easier to work with during
+software development.  Even though it is a different shape from the microcontroller on
+your paintball gun's electronics assembly, they are identical from an electrical and
+firmware perspective.  The DIP package can be stuck onto a standard breadboard, which makes
+it easy to make reliable connections.  Add LEDs and pushbuttons onto the breadboard to
+substitue for the LEDS, trigger, and pushbutton on the gun.  Working directly with the microcontroller on
+the electronics assembly can be a hassle because 1) magnets must be positioned just right
+to enable power, 2) magnets must be positioned just right to effect a trigger pull,
+and 3) the test clip can easily be knocked loose.
+
+* Power your board with a 9V DC power supply instead of a battery during
+development and testing to avoid the frustrations of depleted batteries.
