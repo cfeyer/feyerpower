@@ -30,11 +30,12 @@ Never point a paintball gun at anything that you don't want to shoot.
 
 ## Operating a FeyerPower-equipped paintball gun
 
-FeyerPower can be booted into either "shooting" (normal) or "configuration" (menu) mode.
+A paintball gun with FeyerPower installed can be booted into either
+"shooting" (normal) mode or "configuration" (menu) mode.
 
 ### Shooting (normal) mode
 
-Shooting mode enables you to use the paintball gun like it's a paintball gun and shoot
+Shooting mode enables you to use the paintball gun as a paintball gun and shoot
 stuff.
 
 To boot into "shooting" mode, turn the paintball gun's selector switch to the electronic
@@ -42,8 +43,8 @@ firing mode position without holding down the recessed pushbutton.
 
 ### Configuration mode
 
-Configuration mode enables you to adjust the settings of your paintball gun. Though it
-is not possible to use the paintball gun like a paintball gun in configuration mode,
+Configuration mode enables you to adjust the settings of your paintball gun. While it
+is not possible to use your paintball gun as a paintball gun while in configuration mode,
 accidental discharge is always possible; never point your paintball gun at anything
 you do not want to shoot.
 
@@ -57,23 +58,31 @@ holding the recessed pushbutton until the recessed light (TODO).
 
 ## Installing
 
-Once you begin to install the FeyerPower firmware on your paintball gun, your
-gun will no longer have the factory firmware installed.  It is not possible to
-reinstall the factory firmware. Installing the FeyerPower firmware will erase
-any settings you may have configured, such as (but not limited to) dwell time
-and debounce time.
+Installing the FeyerPower firmware on your paintball gun will erase the factory firmware.
+It is not possible to reinstall the factory firmware once it has been erased.
+Installing the FeyerPower firmware will also erase any settings that you may have configured,
+such as (but not limited to) dwell time and debounce time.
 
 To install FeyerPower firmware on your paintball gun, you will need:
 
 * paintball gun
 * FeyerPower firmware binary image (produced by the "Building" instructions below)
 * programming device compatible with an Atmel AVR attiny44 target
-* programming software compatible with your programming device, such as Atmel Studio
+  * we use an [Atmel AVR Dragon](http://www.atmel.com/tools/avrdragon.aspx)
+* programming software compatible with your programming device
+  * we use [Atmel Studio](http://www.atmel.com/tools/atmelstudio.aspx)
+* means of connecting programming device to paintball gun's microcontroller
+  * we use a [Pomonoa 5251](http://www.pomonaelectronics.com/pdf/d5250-54_5437_1_01.pdf) test clip
+  * consider adding jumper wires, such as [Adafruit 793](https://www.adafruit.com/product/793)
+
+Your paintball gun's microcontroller came from the factory with a sticker indicating
+which version of firmware the factory installed on it. Remove this sticker to avoid
+confusion later.
 
 ## Building
 
-Use can use Atmel Studio software to build the source code of the FeyerPower Project
-into a firmware binary image that can be installed on your paintball gun.
+You can use [Atmel Studio](http://www.atmel.com/tools/atmelstudio.aspx) software to build the source code
+of the FeyerPower Project into a firmware binary image that can be installed on your paintball gun.
 
 ## Developing
 
