@@ -13,32 +13,34 @@ Never point a paintball gun at anything that you don't want to shoot.
 
 ## Features
 
-| Feature                                              | FeyerPower   | Tippmann  |
-| ---------------------------------------------------- |:------------:|:-----:|
-| Three Shot Safety for Enhanced Modes                 | Configurable | Mandatory |
-| Semi-Automatic Firing Mode                           | Yes          | Yes |
-| Auto-Response Firing Mode                            | Yes          | Yes |
-| Three Shot Burst Firing Mode                         | Yes          | Yes |
-| Turbo Firing Mode                                    | Yes          | Yes |
-| Fully Automatic Firing Mode                          | Yes          | Yes |
-| Configurable Firing Rate (Balls Per Second)          | Yes          | Yes |
-| Configurable Dwell Time                              | Yes          | Yes |
-| Configurable Debounce Time                           | Yes          | Yes |
-| Low Battery Indicator                                | (not yet)    | Yes |
-| Select Firing Mode Outside Configuration Menu        | Yes          | Yes |
-| Save Firing Mode Selected Outside Configuration Menu | (not yet)    | Yes |
+| Feature                                               | FeyerPower   | Tippmann  |
+| ----------------------------------------------------- |:------------:|:---------:|
+| Three Shot Safety for Enhanced Modes                  | Configurable | Mandatory |
+| Semi-Automatic Firing Mode                            | Yes          | Yes       |
+| Auto-Response Firing Mode                             | Yes          | Yes       |
+| Three Shot Burst Firing Mode                          | Yes          | Yes       |
+| Turbo Firing Mode                                     | Yes          | Yes       |
+| Fully Automatic Firing Mode                           | Yes          | Yes       |
+| Configurable Firing Rate (Balls Per Second)           | Yes          | Yes       |
+| Configurable Dwell Time                               | Yes          | Yes       |
+| Configurable Debounce Time                            | Yes          | Yes       |
+| Low Battery Indicator                                 | (not yet)    | Yes       |
+| Select Firing Mode while in Shooting Mode             | Yes          | Yes       |
+| Save Firing Mode Selected while in Shooting Mode      | (not yet)    | Yes       |
+| Save Firing Mode Selected while in Configuration Mode | Yes          | Yes       |
+| Processor Sleeps to Extend Battery Life               | Yes          | (unknown) |
 
 ## Operating a FeyerPower-equipped paintball gun
 
-A paintball gun with FeyerPower installed can be booted into either
+A paintball gun with FeyerPower firmware installed can be booted into either
 "shooting" (normal) mode or "configuration" (menu) mode. Instructions for
 installing the FeyerPower firmware can be found in the "Installing" section
 later in this document.
 
 ### Shooting (normal) mode
 
-Shooting mode enables you to use the paintball gun as a paintball gun and shoot
-stuff.
+Shooting mode enables you to use your paintball gun as a paintball gun to deliberately
+shoot stuff.
 
 To boot into "shooting" mode, turn the paintball gun's selector switch to the electronic
 firing mode position without holding down the recessed pushbutton.
