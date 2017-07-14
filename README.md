@@ -31,7 +31,9 @@ Never point a paintball gun at anything that you don't want to shoot.
 ## Operating a FeyerPower-equipped paintball gun
 
 A paintball gun with FeyerPower installed can be booted into either
-"shooting" (normal) mode or "configuration" (menu) mode.
+"shooting" (normal) mode or "configuration" (menu) mode. Instructions for
+installing the FeyerPower firmware can be found in the "Installing" section
+later in this document.
 
 ### Shooting (normal) mode
 
@@ -66,8 +68,9 @@ such as (but not limited to) dwell time and debounce time.
 To install FeyerPower firmware on your paintball gun, you will need:
 
 * paintball gun
-* FeyerPower firmware binary image (produced by the "Building" instructions below)
-* programming device compatible with an Atmel AVR attiny44 target
+* FeyerPower firmware binary image file
+  * instructions for creating this file can be found in the "Building" section later in this document
+* programming device capable of programming your paintball gun's [Atmel AVR ATtiny44 microcontroller](http://www.atmel.com/images/doc8006.pdf)
   * we use an [Atmel AVR Dragon](http://www.atmel.com/tools/avrdragon.aspx)
 * programming software compatible with your programming device
   * we use [Atmel Studio](http://www.atmel.com/tools/atmelstudio.aspx)
